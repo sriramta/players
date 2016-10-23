@@ -1,0 +1,19 @@
+server:
+  port: 9010
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9090/eureka/
+  instance:
+    preferIpAddress: true
+
+ribbon:
+  eureka:
+    enabled: true
+    
+spring:
+  data:
+    neo4j:
+      username: neo4j
+      password: admin
